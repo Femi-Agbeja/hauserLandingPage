@@ -19,7 +19,47 @@
         <button type="button">Learn More</button>
       </div>
     </div>
-    <div class="rightCol"></div>
+    <div class="rightCol">
+      <div class="slider">
+        <img src="/HauserPage/image/pic-1.jpg" alt="" id="slide" >
+      </div>
+      <div class="slideContent">
+        <h2>Where can i find ideas for small rooms</h2>
+        <hr>
+        <p>
+          They can absord pollutant and remove harmful gases from the air.  No home 
+          <br> should be without these wonderful greens! Designing small rooms comes with 
+          <br>completely different challenge
+        </p>
+        <div class="controller">
+          <img src="/HauserPage/image/back.png" alt="" id="backBtn" >
+          <div class="verticalLine"></div>
+          <img src="/HauserPage/image/next.png" alt=""  id="nextBtn">
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script>
+    var slide = document.getElementById("slide");
+    var backBtn = document.getElementById("backBtn");
+    var nextBtn = document.getElementById("nextBtn");
+
+    var slideimages = new Array (
+      "/HauserPage/image/pic-1.jpg",
+      "/HauserPage/image/pic-2.jpg",
+      "/HauserPage/image/pic-3.jpg",
+      "/HauserPage/image/pic-4.jpg",
+    );
+
+    let i = 0;
+    nextBtn.oneclick = function(){
+      slide.src = slideimages[i + 1];
+      i++
+    }
+
+
+
+  </script>
 </body>
 </html>
